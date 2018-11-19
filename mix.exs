@@ -21,8 +21,9 @@ defmodule Onesky.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:httpoison, "~> 1.4.0"},
-      {:poison, "~> 4.0.1"},
+      {:tesla, "~> 1.2.1"},
+      {:hackney, "~> 1.14.0"},
+      {:jason, ">= 1.0.0"}
     ]
   end
 end
