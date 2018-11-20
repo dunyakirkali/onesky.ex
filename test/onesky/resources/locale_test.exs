@@ -3,8 +3,10 @@ defmodule LocaleTest do
   doctest Onesky.Locale
 
   test "list_locales" do
-    {:ok, response} = Onesky.client() |> Onesky.Locale.list_locales()
+    {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Locale.list_locales()
 
-    assert response.status == 200
+    assert env.status == 200
+    assert env.body["meta"]["status"] == 200
+    assert env.body["meta"]["record_count"] == 487
   end
 end
