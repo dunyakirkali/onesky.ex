@@ -1,0 +1,33 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://platform.api.onesky.io/1/project-groups/142066/languages?api_key=.*&timestamp=.*&dev_hash=.*"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"meta\":{\"status\":200,\"record_count\":5},\"data\":[{\"code\":\"en\",\"english_name\":\"English\",\"local_name\":\"English\",\"locale\":\"en\",\"region\":\"\",\"is_base_language\":false},{\"code\":\"nl\",\"english_name\":\"Dutch\",\"local_name\":\"Nederlands\",\"locale\":\"nl\",\"region\":\"\",\"is_base_language\":false},{\"code\":\"en-GB\",\"english_name\":\"English (United Kingdom)\",\"local_name\":\"English (United Kingdom)\",\"locale\":\"en\",\"region\":\"GB\",\"is_base_language\":false},{\"code\":\"tlh-KL\",\"english_name\":\"Klingon\",\"local_name\":\"tlhIngan\",\"locale\":\"tlh\",\"region\":\"KL\",\"is_base_language\":true},{\"code\":\"nl-NL\",\"english_name\":\"Dutch (Netherlands)\",\"local_name\":\"Nederlands (Nederland)\",\"locale\":\"nl\",\"region\":\"NL\",\"is_base_language\":false}]}",
+      "headers": {
+        "Access-Control-Allow-Headers": "Authorization, X-Authorization, Origin, Accept, Content-Type, X-Requested-With, X-HTTP-Method-Override",
+        "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Content-Type": "application/json",
+        "Date": "Wed, 21 Nov 2018 20:47:37 GMT",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Pragma": "no-cache",
+        "Server": "Apache",
+        "Set-Cookie": "PHPSESSID=rrsf0georjge14ujpmh2ea3md7; path=/",
+        "Vary": "Accept-Encoding",
+        "Content-Length": "693",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
