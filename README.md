@@ -56,8 +56,7 @@
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `onesky` to your list of dependencies in `mix.exs`:
+Add the following to your `mix.exs` file
 
 ```elixir
 def deps do
@@ -67,6 +66,8 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/onesky](https://hexdocs.pm/onesky).
+And run `mix deps.get`
+
+## Contribute
+
+Please feel free to fork and send us a PR or open up an issue.
