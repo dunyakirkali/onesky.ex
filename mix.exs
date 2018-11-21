@@ -5,10 +5,13 @@ defmodule Onesky.MixProject do
     [
       app: :onesky,
       version: "0.1.0",
-      elixir: "~> 1.7",
+      elixir: "~> 1.3",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      preferred_cli_env: [vcr: :test]
+      package: package(),
+      description: description(),
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [coveralls: :test, vcr: :test]
     ]
   end
 
@@ -22,10 +25,30 @@ defmodule Onesky.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:excoveralls, "~> 0.8.1", only: :test},
+      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:credo, "~> 0.8.10", only: [:dev, :test], runtime: false},
       {:tesla, "~> 1.2.1"},
       {:hackney, "~> 1.14.0"},
       {:jason, ">= 1.0.0"},
       {:exvcr, "~> 0.10", only: :test}
     ]
+  end
+
+  # Package Information
+  defp package do
+    [
+      files: ["test", "lib", "mix.exs", "README.md", "LICENSE*"],
+      maintainers: ["Dunya Kirkali", "Onur Kucukkece"],
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "https://github.com/ahtung/onesky.ex"}
+    ]
+  end
+
+  # Package description
+  defp description do
+    """
+    Elixir's OneSky API client
+    """
   end
 end
