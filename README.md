@@ -11,25 +11,25 @@
 
 **Project**
 - **Project Group**
-    -   LIST all project groups
-    -   SHOW project group details
-    -   CREATE a new project group
-    -   DELETE a project group
-    -   list enabled LANGUAGES 
+    - ~~LIST all project groups~~
+    - SHOW project group details
+    - CREATE a new project group
+    - DELETE a project group
+    - ~~list enabled LANGUAGES~~
 - **Project**
-    - LIST projects of a project group
+    - ~~LIST projects of a project group~~
     - SHOW project details
     - CREATE a new project
     - UPDATE a project
     - DELETE a project
-    - list LANGUAGES of a project 
+    - list LANGUAGES of a project
 - **Project Type**
     - LIST all project types
 
 **String**
 - **File**
     - LIST uploaded files
-    - UPLOAD a file 
+    - UPLOAD a file
     - DELETE a file
 - **Translation**
     - EXPORT translations in files
@@ -46,14 +46,13 @@
 - **Quotation**
     - SHOW a quotation
 - **Order**
-    - LIST all orders 
-    - SHOW order details
+    - ~~LIST all orders~~
+    - ~~SHOW order details~~
     - CREATE an order
 
 **Language**
 - **Locale**
-    - LIST all locales
-
+    - ~~LIST all locales~~
 
 ## Installation
 
