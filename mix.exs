@@ -7,7 +7,8 @@ defmodule Onesky.MixProject do
       version: "0.1.0",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      preferred_cli_env: [vcr: :test]
     ]
   end
 
@@ -23,7 +24,8 @@ defmodule Onesky.MixProject do
     [
       {:tesla, "~> 1.2.1"},
       {:hackney, "~> 1.14.0"},
-      {:jason, ">= 1.0.0"}
+      {:jason, ">= 1.0.0"},
+      {:exvcr, "~> 0.10", only: :test}
     ]
   end
 end
