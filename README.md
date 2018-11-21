@@ -7,6 +7,54 @@
 
 **TODO: Add description**
 
+## Resources
+
+**Project**
+- **Project Group**
+    -   LIST all project groups
+    -   SHOW project group details
+    -   CREATE a new project group
+    -   DELETE a project group
+    -   list enabled LANGUAGES 
+- **Project**
+    - LIST projects of a project group
+    - SHOW project details
+    - CREATE a new project
+    - UPDATE a project
+    - DELETE a project
+    - list LANGUAGES of a project 
+- **Project Type**
+    - LIST all project types
+
+**String**
+- **File**
+    - LIST uploaded files
+    - UPLOAD a file 
+    - DELETE a file
+- **Translation**
+    - EXPORT translations in files
+    - export translations in MULTILINGUAL files
+    - export translations of APP STORE Description
+    - GET translation status
+- **Import Task**
+    - LIST import tasks
+    - SHOW import task
+- **Screenshot**
+    - UPLOAD screenshots
+
+**Order**
+- **Quotation**
+    - SHOW a quotation
+- **Order**
+    - LIST all orders 
+    - SHOW order details
+    - CREATE an order
+
+**Language**
+- **Locale**
+    - LIST all locales
+
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
