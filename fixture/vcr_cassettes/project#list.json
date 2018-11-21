@@ -1,0 +1,33 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://platform.api.onesky.io/1/project-groups/142066/projects?api_key=.*&timestamp=.*&dev_hash=.*"
+    },
+    "response": {
+      "binary": false,
+      "body": "\n{\n    \"meta\": {\"status\":200,\"record_count\":3},\n    \"data\": [{\"id\":314254,\"name\":\"iPhone\\/iPad App\"},{\"id\":314256,\"name\":\"Android App\"},{\"id\":316175,\"name\":\"Regular Website\"}]}\n",
+      "headers": {
+        "Access-Control-Allow-Headers": "Authorization, X-Authorization, Origin, Accept, Content-Type, X-Requested-With, X-HTTP-Method-Override",
+        "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Content-Type": "application/json",
+        "Date": "Wed, 21 Nov 2018 20:51:08 GMT",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Pragma": "no-cache",
+        "Server": "Apache",
+        "Set-Cookie": "PHPSESSID=jq79s497vauqum224qck2o0oe2; path=/",
+        "Vary": "Accept-Encoding",
+        "Content-Length": "177",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
