@@ -18,7 +18,7 @@
     - ~~list enabled LANGUAGES~~
 - **Project**
     - ~~LIST projects of a project group~~
-    - SHOW project details
+    - ~~SHOW project details~~
     - CREATE a new project
     - UPDATE a project
     - DELETE a project
