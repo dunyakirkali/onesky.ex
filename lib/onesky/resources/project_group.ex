@@ -18,6 +18,13 @@ defmodule Onesky.ProjectGroup do
   end
 
   @doc """
+  CREATE a new project group
+  """
+  def create_project_group(client, project_group) do
+    Tesla.post(client, "/project-groups", project_group)
+  end
+
+  @doc """
   Languages - list enabled languages of a project group
   """
   def languages(client, project_group_id) do

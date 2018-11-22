@@ -32,6 +32,20 @@ defmodule ProjectGroupTest do
     end
   end
 
+  test "create_project_group" do
+    use_cassette "project_group#create" do
+      project_group = %{"name" => "Ahtung", "locale" => "zh-TW"}
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ProjectGroup.create_project_group(project_group)
+
+      assert env.status == 201
+
+      assert env.body["meta"]["status"] == 201
+
+      assert env.body["data"]["id"] == 145685
+      assert env.body["data"]["name"] == "Ahtung"
+    end
+  end
+
   test "languages" do
     use_cassette "project_group#languages" do
       {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ProjectGroup.languages(142066)
