@@ -1,0 +1,33 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://platform.api.onesky.io/1/projects/314254/files?api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542917985&dev_hash=16cfaabac1475ce644b8a5e3136773ff"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"meta\":{\"status\":200,\"record_count\":1,\"page_count\":1,\"next_page\":null,\"prev_page\":null,\"first_page\":null,\"last_page\":null},\"data\":[{\"file_name\":\"Localizable.strings\",\"string_count\":534,\"last_import\":{\"id\":5109944,\"status\":\"completed\"},\"uploaded_at\":\"2018-11-21T13:21:37+0000\",\"uploaded_at_timestamp\":1542806497}]}",
+      "headers": {
+        "Access-Control-Allow-Headers": "Authorization, X-Authorization, Origin, Accept, Content-Type, X-Requested-With, X-HTTP-Method-Override",
+        "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Nov 2018 20:19:45 GMT",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Pragma": "no-cache",
+        "Server": "Apache",
+        "Set-Cookie": "PHPSESSID=9emh4195l4n15q0mqu87li9693; path=/",
+        "Vary": "Accept-Encoding",
+        "Content-Length": "314",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
