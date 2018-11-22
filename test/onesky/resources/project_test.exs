@@ -32,4 +32,19 @@ defmodule ProjectTest do
       assert env.body["data"]["word_count"] == 2478
     end
   end
+
+  test "create_project" do
+    use_cassette "project#create" do
+      project = %{"project_type" => "website", "name" => "Ahtung", "description" => "The best company"}
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.create_project(142066, project)
+
+      assert env.status == 201
+
+      assert env.body["meta"]["status"] == 201
+
+      assert env.body["data"]["id"] == 322910
+      assert env.body["data"]["name"] == "Ahtung"
+      assert env.body["data"]["description"] == "The best company"
+    end
+  end
 end
