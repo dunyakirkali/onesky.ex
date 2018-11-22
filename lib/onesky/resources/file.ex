@@ -9,4 +9,18 @@ defmodule Onesky.File do
   def list_uploaded_files(client, project_id) do
     Tesla.get(client, "/projects/#{project_id}/files")
   end
+
+  # @doc """
+  # UPLOAD a file
+  # """
+  # def upload_file(client, project_id, file) do
+  #   Tesla.post(client, "/projects/#{project_id}/files", file)
+  # end
+
+  @doc """
+  DELETE a file
+  """
+  def delete_file(client, project_id, file) do
+    Tesla.delete(client, "/projects/#{project_id}/files?file_name=#{file["file_name"]}")
+  end
 end

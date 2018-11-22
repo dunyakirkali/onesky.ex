@@ -1,0 +1,32 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://platform.api.onesky.io/1/projects/322927/files?file_name=gettext_po_sample_file.po&api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542922040&dev_hash=bb95999c601823d0f27e7266c3681901"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"meta\":{\"status\":200},\"data\":{\"name\":\"gettext_po_sample_file.po\"}}",
+      "headers": {
+        "Access-Control-Allow-Headers": "Authorization, X-Authorization, Origin, Accept, Content-Type, X-Requested-With, X-HTTP-Method-Override",
+        "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Nov 2018 21:27:21 GMT",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Pragma": "no-cache",
+        "Server": "Apache",
+        "Set-Cookie": "PHPSESSID=caqq7453mk39qul4qsdheqlip5; path=/",
+        "Content-Length": "67",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
