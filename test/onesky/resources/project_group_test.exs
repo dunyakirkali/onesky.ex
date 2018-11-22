@@ -17,6 +17,21 @@ defmodule ProjectGroupTest do
     end
   end
 
+  test "show_project_group_details" do
+    use_cassette "project_group#show" do
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ProjectGroup.show_project_group_details(142066)
+
+      assert env.status == 200
+
+      assert env.body["meta"]["status"] == 200
+
+      assert env.body["data"]["id"] == "142066"
+      assert env.body["data"]["name"] == "Grip"
+      assert env.body["data"]["enabled_language_count"] == 5
+      assert env.body["data"]["project_count"] == "3"
+    end
+  end
+
   test "languages" do
     use_cassette "project_group#languages" do
       {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ProjectGroup.languages(142066)
