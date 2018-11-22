@@ -56,4 +56,12 @@ defmodule ProjectTest do
       assert env.status == 200
     end
   end
+
+  test "delete_project" do
+    use_cassette "project#delete" do
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.delete_project(322910)
+
+      assert env.status == 200
+    end
+  end
 end

@@ -30,4 +30,11 @@ defmodule Onesky.Project do
   def update_project(client, project_id, project) do
     Tesla.put(client, "/projects/#{project_id}", project)
   end
+
+  @doc """
+  DELETE a project
+  """
+  def delete_project(client, project_id) do
+    Tesla.delete(client, "/projects/#{project_id}")
+  end
 end
