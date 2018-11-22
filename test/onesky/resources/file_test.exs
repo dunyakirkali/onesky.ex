@@ -19,22 +19,6 @@ defmodule FileTest do
     end
   end
 
-  # test "upload_file" do
-  #   use_cassette "file#upload" do
-  #     file = Multipart.new
-  #       |> Multipart.add_field("file_format", "GNU_PO")
-  #       |> Multipart.add_file("#{File.cwd!}/fixture/translations/gettext_po_sample_file.po", name: "file")
-  #     {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.File.upload_file(322927, file)
-  #
-  #     assert env.status == 201
-  #
-  #     assert env.body["meta"]["status"] == 201
-  #
-  #     assert env.body["name"] == 1
-  #     assert env.body["fformat"] == 1
-  #   end
-  # end
-
   test "delete_file" do
     use_cassette "file#delete" do
       file = %{"file_name" => "gettext_po_sample_file.po"}
