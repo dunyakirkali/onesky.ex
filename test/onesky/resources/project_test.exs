@@ -47,4 +47,13 @@ defmodule ProjectTest do
       assert env.body["data"]["description"] == "The best company"
     end
   end
+
+  test "update_project" do
+    use_cassette "project#update" do
+      project = %{"name" => "Bhtung", "description" => "The worst company"}
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.update_project(322910, project)
+
+      assert env.status == 200
+    end
+  end
 end

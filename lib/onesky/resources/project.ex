@@ -23,4 +23,11 @@ defmodule Onesky.Project do
   def create_project(client, project_group_id, project) do
     Tesla.post(client, "/project-groups/#{project_group_id}/projects", project)
   end
+
+  @doc """
+  UPDATE a project
+  """
+  def update_project(client, project_id, project) do
+    Tesla.put(client, "/projects/#{project_id}", project)
+  end
 end
