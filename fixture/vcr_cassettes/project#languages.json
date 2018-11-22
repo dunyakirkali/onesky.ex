@@ -1,0 +1,33 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://platform.api.onesky.io/1/projects/322927/languages?api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542916352&dev_hash=1c955a9026c8f01e5e3e3e5ab01a8b64"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"meta\":{\"status\":200,\"record_count\":3},\"data\":[{\"code\":\"tlh-KL\",\"english_name\":\"Klingon\",\"local_name\":\"tlhIngan\",\"custom_locale\":null,\"locale\":\"tlh\",\"region\":\"KL\",\"is_base_language\":true,\"is_ready_to_publish\":false,\"translation_progress\":\"0%\",\"last_updated_at\":null,\"last_updated_at_timestamp\":null},{\"code\":\"zh-Hans-CN\",\"english_name\":\"Chinese Simplified (China)\",\"local_name\":\"Simplified Chinese\",\"custom_locale\":null,\"locale\":\"zh\",\"region\":\"CN\",\"is_base_language\":false,\"is_ready_to_publish\":false,\"translation_progress\":\"0%\",\"last_updated_at\":null,\"last_updated_at_timestamp\":null},{\"code\":\"ja\",\"english_name\":\"Japanese\",\"local_name\":\"\\u65e5\\u672c\\u8a9e\",\"custom_locale\":null,\"locale\":\"ja\",\"region\":\"\",\"is_base_language\":false,\"is_ready_to_publish\":false,\"translation_progress\":\"0%\",\"last_updated_at\":null,\"last_updated_at_timestamp\":null}]}",
+      "headers": {
+        "Access-Control-Allow-Headers": "Authorization, X-Authorization, Origin, Accept, Content-Type, X-Requested-With, X-HTTP-Method-Override",
+        "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Nov 2018 19:52:32 GMT",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Pragma": "no-cache",
+        "Server": "Apache",
+        "Set-Cookie": "PHPSESSID=1lvpr90b6riu3bh971a9ia2i10; path=/",
+        "Vary": "Accept-Encoding",
+        "Content-Length": "846",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

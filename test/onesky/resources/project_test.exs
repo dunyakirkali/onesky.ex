@@ -64,4 +64,17 @@ defmodule ProjectTest do
       assert env.status == 200
     end
   end
+
+  test "languages" do
+    use_cassette "project#languages" do
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.languages(322927)
+
+      assert env.status == 200
+
+      assert env.body["meta"]["status"] == 200
+      assert env.body["meta"]["record_count"] == 3
+
+      assert length(env.body["data"]) == 3
+    end
+  end
 end

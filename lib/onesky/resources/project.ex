@@ -37,4 +37,11 @@ defmodule Onesky.Project do
   def delete_project(client, project_id) do
     Tesla.delete(client, "/projects/#{project_id}")
   end
+
+  @doc """
+  Languages - list enabled languages of a project
+  """
+  def languages(client, project_id) do
+    Tesla.get(client, "/projects/#{project_id}/languages")
+  end
 end
