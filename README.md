@@ -61,7 +61,7 @@ Add the following to your `mix.exs` file
 ```elixir
 def deps do
   [
-    {:onesky, "~> 0.7.0"}
+    {:onesky, "~> 0.8.0"}
   ]
 end
 ```
