@@ -16,4 +16,16 @@ defmodule ImportTaskTest do
       assert length(env.body["data"]) == 2
     end
   end
+
+  test "show_import_tasks" do
+    use_cassette "import_task#show" do
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ImportTask.show_import_task(322927, 5114469)
+
+      assert env.status == 200
+
+      assert env.body["meta"]["status"] == 200
+
+      assert env.body["data"]["id"] == 5114469
+    end
+  end
 end
