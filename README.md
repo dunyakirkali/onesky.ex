@@ -19,7 +19,7 @@
 - **Project**
     - ~~LIST projects of a project group~~
     - ~~SHOW project details~~
-    - CREATE a new project
+    - ~~CREATE a new project~~
     - UPDATE a project
     - DELETE a project
     - list LANGUAGES of a project
