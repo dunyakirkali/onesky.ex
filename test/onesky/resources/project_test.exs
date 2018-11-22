@@ -47,4 +47,34 @@ defmodule ProjectTest do
       assert env.body["data"]["description"] == "The best company"
     end
   end
+
+  test "update_project" do
+    use_cassette "project#update" do
+      project = %{"name" => "Bhtung", "description" => "The worst company"}
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.update_project(322910, project)
+
+      assert env.status == 200
+    end
+  end
+
+  test "delete_project" do
+    use_cassette "project#delete" do
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.delete_project(322910)
+
+      assert env.status == 200
+    end
+  end
+
+  test "languages" do
+    use_cassette "project#languages" do
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.languages(322927)
+
+      assert env.status == 200
+
+      assert env.body["meta"]["status"] == 200
+      assert env.body["meta"]["record_count"] == 3
+
+      assert length(env.body["data"]) == 3
+    end
+  end
 end
