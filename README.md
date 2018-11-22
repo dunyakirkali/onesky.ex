@@ -14,7 +14,7 @@
     - ~~LIST all project groups~~
     - ~~SHOW project group details~~
     - ~~CREATE a new project group~~
-    - DELETE a project group
+    - ~~DELETE a project group~~
     - ~~list enabled LANGUAGES~~
 - **Project**
     - ~~LIST projects of a project group~~

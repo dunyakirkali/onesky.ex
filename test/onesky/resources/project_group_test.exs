@@ -46,6 +46,14 @@ defmodule ProjectGroupTest do
     end
   end
 
+  test "delete_project_group" do
+    use_cassette "project_group#delete" do
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ProjectGroup.delete_project_group(145685)
+
+      assert env.status == 200
+    end
+  end
+
   test "languages" do
     use_cassette "project_group#languages" do
       {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ProjectGroup.languages(142066)
