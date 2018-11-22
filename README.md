@@ -7,6 +7,28 @@
 
 **TODO: Add description**
 
+## Installation
+
+Add the following to your `mix.exs` file
+
+```elixir
+def deps do
+  [
+    {:onesky, "~> 0.8.0"}
+  ]
+end
+```
+
+And run `mix deps.get`
+
+## Configuration
+
+```elixir
+config :onesky,
+  api_key: "YOUR_API_KEY",
+  api_secret: "YOUR_API_SECRET"
+```
+
 ## Resources
 
 **Project**
@@ -28,9 +50,9 @@
 
 **String**
 - **File**
-    - LIST uploaded files
+    - ~~LIST uploaded files~~
     - UPLOAD a file
-    - DELETE a file
+    - ~~DELETE a file~~
 - **Translation**
     - EXPORT translations in files
     - export translations in MULTILINGUAL files
@@ -53,20 +75,6 @@
 **Language**
 - **Locale**
     - ~~LIST all locales~~
-
-## Installation
-
-Add the following to your `mix.exs` file
-
-```elixir
-def deps do
-  [
-    {:onesky, "~> 0.8.0"}
-  ]
-end
-```
-
-And run `mix deps.get`
 
 ## Contribute
 
