@@ -59,8 +59,8 @@ config :onesky,
     - export translations of APP STORE Description
     - GET translation status
 - **Import Task**
-    - LIST import tasks
-    - SHOW import task
+    - ~~LIST import tasks~~
+    - ~~SHOW import task~~
 - **Screenshot**
     - UPLOAD screenshots
 
