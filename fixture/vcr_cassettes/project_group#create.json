@@ -1,0 +1,34 @@
+[
+  {
+    "request": {
+      "body": "{\"locale\":\"zh-TW\",\"name\":\"Ahtung\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://platform.api.onesky.io/1/project-groups?api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542885674&dev_hash=190bcd8dfab077e12d425ce47fb560a9"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"meta\":{\"status\":201},\"data\":{\"id\":145685,\"name\":\"Ahtung\",\"base_language\":{\"code\":\"zh-TW\",\"english_name\":\"Chinese Traditional\",\"local_name\":\"\\u7e41\\u9ad4\\u4e2d\\u6587\",\"locale\":\"zh\",\"region\":\"TW\"}}}",
+      "headers": {
+        "Access-Control-Allow-Headers": "Authorization, X-Authorization, Origin, Accept, Content-Type, X-Requested-With, X-HTTP-Method-Override",
+        "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Nov 2018 11:21:15 GMT",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Pragma": "no-cache",
+        "Server": "Apache",
+        "Set-Cookie": "PHPSESSID=cla4d9v1ujhb34ic0nrv8u0ce3; path=/",
+        "Content-Length": "198",
+        "Connection": "keep-alive"
+      },
+      "status_code": 201,
+      "type": "ok"
+    }
+  }
+]

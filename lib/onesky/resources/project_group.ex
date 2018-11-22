@@ -18,6 +18,13 @@ defmodule Onesky.ProjectGroup do
   end
 
   @doc """
+  CREATE a new project group
+  """
+  def create_project_group(client, project_group) do
+    Tesla.post(client, "/project-groups", project_group)
+  end
+
+  @doc """
   DELETE a project group
   """
   def delete_project_group(client, project_group_id) do

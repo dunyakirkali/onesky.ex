@@ -13,7 +13,7 @@
 - **Project Group**
     - ~~LIST all project groups~~
     - ~~SHOW project group details~~
-    - CREATE a new project group
+    - ~~CREATE a new project group~~
     - ~~DELETE a project group~~
     - ~~list enabled LANGUAGES~~
 - **Project**
@@ -61,7 +61,7 @@ Add the following to your `mix.exs` file
 ```elixir
 def deps do
   [
-    {:onesky, "~> 0.2.0"}
+    {:onesky, "~> 0.3.0"}
   ]
 end
 ```
