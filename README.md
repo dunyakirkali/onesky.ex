@@ -24,7 +24,7 @@
     - DELETE a project
     - list LANGUAGES of a project
 - **Project Type**
-    - LIST all project types
+    - ~~LIST all project types~~
 
 **String**
 - **File**
