@@ -1,0 +1,33 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://platform.api.onesky.io/1/project-types?api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542887609&dev_hash=eeef6fca0c14328a75a42f3784f0498f"
+    },
+    "response": {
+      "binary": false,
+      "body": "\n{\n    \"meta\": {\"status\":200,\"record_count\":15},\n    \"data\": [{\"code\":\"ios\",\"name\":\"iPhone\\/iPad App\"},{\"code\":\"game-ios\",\"name\":\"iOS game\"},{\"code\":\"game-android\",\"name\":\"Android game\"},{\"code\":\"android\",\"name\":\"Android App\"},{\"code\":\"game-unity\",\"name\":\"Unity\"},{\"code\":\"game-cocos2dx\",\"name\":\"Cocos2dx\"},{\"code\":\"game-others\",\"name\":\"Others\"},{\"code\":\"windows-metro\",\"name\":\"Windows Metro App\"},{\"code\":\"website\",\"name\":\"Regular Website\"},{\"code\":\"blackberry\",\"name\":\"Blackberry App\"},{\"code\":\"app-others\",\"name\":\"Others\"},{\"code\":\"webapp\",\"name\":\"Regular Web App\"},{\"code\":\"facebook\",\"name\":\"Facebook App\"},{\"code\":\"document-spreadsheet\",\"name\":\"Spreadsheet\"},{\"code\":\"webapp-others\",\"name\":\"Others\"}]}\n",
+      "headers": {
+        "Access-Control-Allow-Headers": "Authorization, X-Authorization, Origin, Accept, Content-Type, X-Requested-With, X-HTTP-Method-Override",
+        "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Nov 2018 11:53:30 GMT",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Pragma": "no-cache",
+        "Server": "Apache",
+        "Set-Cookie": "PHPSESSID=7rmpcfo13vfbmjiudo2s04hhg6; path=/",
+        "Vary": "Accept-Encoding",
+        "Content-Length": "707",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
