@@ -18,6 +18,13 @@ defmodule Onesky.ProjectGroup do
   end
 
   @doc """
+  DELETE a project group
+  """
+  def delete_project_group(client, project_group_id) do
+    Tesla.delete(client, "/project-groups/#{project_group_id}")
+  end
+
+  @doc """
   Languages - list enabled languages of a project group
   """
   def languages(client, project_group_id) do
