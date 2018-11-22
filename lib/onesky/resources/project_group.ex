@@ -11,6 +11,13 @@ defmodule Onesky.ProjectGroup do
   end
 
   @doc """
+  SHOW project group details
+  """
+  def show_project_group_details(client, project_group_id) do
+    Tesla.get(client, "/project-groups/#{project_group_id}")
+  end
+
+  @doc """
   Languages - list enabled languages of a project group
   """
   def languages(client, project_group_id) do
