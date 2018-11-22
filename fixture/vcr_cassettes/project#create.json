@@ -1,0 +1,34 @@
+[
+  {
+    "request": {
+      "body": "{\"description\":\"The best company\",\"name\":\"Ahtung\",\"project_type\":\"website\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://platform.api.onesky.io/1/project-groups/142066/projects?api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542893082&dev_hash=38ef37b5413a653de0aa39e13529ab4d"
+    },
+    "response": {
+      "binary": false,
+      "body": "\n{\n    \"meta\": {\"status\":201},\n    \"data\": {\"id\":322910,\"project_type\":{\"code\":\"website\",\"name\":\"Regular Website\"},\"name\":\"Ahtung\",\"description\":\"The best company\"}}",
+      "headers": {
+        "Access-Control-Allow-Headers": "Authorization, X-Authorization, Origin, Accept, Content-Type, X-Requested-With, X-HTTP-Method-Override",
+        "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Nov 2018 13:24:43 GMT",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Pragma": "no-cache",
+        "Server": "Apache",
+        "Set-Cookie": "PHPSESSID=mt35o8q7hgqf2ld7pmjduo30q7; path=/",
+        "Content-Length": "165",
+        "Connection": "keep-alive"
+      },
+      "status_code": 201,
+      "type": "ok"
+    }
+  }
+]
