@@ -1,0 +1,33 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://platform.api.onesky.io/1/projects/314254/translations/status?file_name=Localizable.strings&locale=nl-NL&api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542963701&dev_hash=0490328b3619cbaac396330d9d8129dd"
+    },
+    "response": {
+      "binary": false,
+      "body": "\n{\n    \"meta\": {\"status\":200},\n    \"data\": {\"file_name\":\"Localizable.strings\",\"locale\":{\"code\":\"nl-NL\",\"english_name\":\"Dutch (Netherlands)\",\"local_name\":\"Nederlands (Nederland)\",\"custom_locale\":null,\"locale\":\"nl\",\"region\":\"NL\"},\"progress\":\"100.0%\",\"string_count\":534,\"word_count\":2478}}\n",
+      "headers": {
+        "Access-Control-Allow-Headers": "Authorization, X-Authorization, Origin, Accept, Content-Type, X-Requested-With, X-HTTP-Method-Override",
+        "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Content-Type": "application/json",
+        "Date": "Fri, 23 Nov 2018 09:01:42 GMT",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Pragma": "no-cache",
+        "Server": "Apache",
+        "Set-Cookie": "PHPSESSID=hgu4r6di4122e22spv66mfbl60; path=/",
+        "Vary": "Accept-Encoding",
+        "Content-Length": "287",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
