@@ -1,0 +1,33 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://platform.api.onesky.io/1/projects/322974/translations/app-descriptions?locale=en&api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542976240&dev_hash=1375fff9b5525124721a1b1b15b13795"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\n    \"meta\": {\"status\":200,\"language\":{\"code\":\"en\",\"english_name\":\"English\",\"local_name\":\"English\",\"locale\":\"en\",\"region\":\"\"}},\n    \"data\": {\n    \"APP_NAME\": \"ABN AMRO Grip\",\n    \"APP_DESCRIPTION\": \"ABN AMRO Grip\\nEasily keep track of your finances\\n\\nGet the most out of your money with Grip. The Grip app gives you a complete overview of your income and expenditure, so you can see exactly what you are spending your money on. This will show you where you might be able to cut down your spending, leaving you with more money for the things that matter most to you.\\n\\nThe benefits of the Grip app\\n\\u2022\\tGrip automatically assigns all your transactions to categories, so you can see straight away exactly what you are spending on things like shopping or socialising. \\n\\u2022\\tIf there are certain things you want to spend less money on, such as clothes or eating out, you can set a budget. You will then receive a push notification when you have almost reached your budget. \\n\\u2022\\tIf you want to find out how much you spent on a holiday, you can tag all your transactions for that holiday, from plane tickets to sunscreen. \\nWho Grip is for\\nYou can use the Grip app if you are aged 18 or older and have an ABN AMRO current account or a bunq premium account.\\n\\nGetting started with the Grip app\\nCreating an account could not be easier. \\n1.\\tEnter your mobile number. You will be sent a text message with an activation code.\\n2.\\tEnter the activation code to activate Grip on your mobile.\\n3.\\tChoose a 6-digit log-in code and confirm it.\\n4.\\tLink your ABN AMRO account or bunq account to Grip.\\nYou can now log in to Grip using this 6-digit log-in code. You can also choose to log in using your fingerprint \\u2014 quick, easy and secure.\\n\\nQuestions\\nIf you have any questions, please to go to abnamro.nl\\/gripapp to find out all there is to know about the ABN AMRO Grip app. More tips and tricks for the use of the Grip app can be found at abnamro.nl\\/griptips.\"\n}}",
+      "headers": {
+        "Access-Control-Allow-Headers": "Authorization, X-Authorization, Origin, Accept, Content-Type, X-Requested-With, X-HTTP-Method-Override",
+        "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Content-Type": "application/json",
+        "Date": "Fri, 23 Nov 2018 12:30:41 GMT",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Pragma": "no-cache",
+        "Server": "Apache",
+        "Set-Cookie": "PHPSESSID=hrgrml52ja6aeg4aualmnm7tg2; path=/",
+        "Vary": "Accept-Encoding",
+        "Content-Length": "1980",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

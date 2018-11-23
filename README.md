@@ -56,7 +56,7 @@ config :onesky,
 - **Translation**
     - EXPORT translations in files
     - export translations in MULTILINGUAL files
-    - export translations of APP STORE Description
+    - ~~export translations of APP STORE Description~~
     - ~~GET translation status~~
 - **Import Task**
     - ~~LIST import tasks~~
