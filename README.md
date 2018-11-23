@@ -14,7 +14,7 @@ Add the following to your `mix.exs` file
 ```elixir
 def deps do
   [
-    {:onesky, "~> 0.10.0"}
+    {:onesky, "~> 0.11.0"}
   ]
 end
 ```
