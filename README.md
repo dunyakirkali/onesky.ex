@@ -5,7 +5,9 @@
 [![Hex.pm version](https://img.shields.io/hexpm/v/onesky.svg?style=flat-square)](https://hex.pm/packages/onesky)
 [![Hex.pm downloads](https://img.shields.io/hexpm/dt/onesky.svg)](https://hex.pm/packages/onesky)
 
-**TODO: Add description**
+Elixir's OneSky API client.
+
+Documentation can be found [here](https://hexdocs.pm/onesky).
 
 ## Installation
 
