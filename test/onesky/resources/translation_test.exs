@@ -6,6 +6,15 @@ defmodule TranslationTest do
 
   doctest Onesky.Translation
 
+  test "get_multilingual_file" do
+    use_cassette "translation#multilingual" do
+      file = %{"source_file_name" => "Localizable.strings"}
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Translation.get_multilingual_file(322974, file)
+
+      assert env.status == 204
+    end
+  end
+
   test "get_appstore_description" do
     use_cassette "translation#app_store" do
       locale = %{"locale" => "en"}
