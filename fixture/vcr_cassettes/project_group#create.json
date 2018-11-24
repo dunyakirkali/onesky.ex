@@ -8,7 +8,7 @@
       "method": "post",
       "options": [],
       "request_body": "",
-      "url": "https://platform.api.onesky.io/1/project-groups?api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542885674&dev_hash=190bcd8dfab077e12d425ce47fb560a9"
+      "url": "https://platform.api.onesky.io/1/project-groups?api_key=.*&timestamp=.*&dev_hash=.*"
     },
     "response": {
       "binary": false,
