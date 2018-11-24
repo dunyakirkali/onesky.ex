@@ -6,7 +6,7 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://platform.api.onesky.io/1/projects/314254/translations/status?file_name=Localizable.strings&locale=nl-NL&api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542963701&dev_hash=0490328b3619cbaac396330d9d8129dd"
+      "url": "https://platform.api.onesky.io/1/projects/314254/translations/status?file_name=Localizable.strings&locale=nl-NL&api_key=.*&timestamp=.*&dev_hash=.*"
     },
     "response": {
       "binary": false,

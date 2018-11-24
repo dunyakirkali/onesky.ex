@@ -6,7 +6,7 @@
       "method": "delete",
       "options": [],
       "request_body": "",
-      "url": "https://platform.api.onesky.io/1/projects/322927/files?file_name=gettext_po_sample_file.po&api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542922040&dev_hash=bb95999c601823d0f27e7266c3681901"
+      "url": "https://platform.api.onesky.io/1/projects/322927/files?file_name=gettext_po_sample_file.po&api_key=.*&timestamp=.*&dev_hash=.*"
     },
     "response": {
       "binary": false,

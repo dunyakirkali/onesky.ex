@@ -8,7 +8,7 @@
       "method": "put",
       "options": [],
       "request_body": "",
-      "url": "https://platform.api.onesky.io/1/projects/322910?api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542915922&dev_hash=f61651844f78f8905bf4c8ea52d01aa6"
+      "url": "https://platform.api.onesky.io/1/projects/322910?api_key=.*&timestamp=.*&dev_hash=.*"
     },
     "response": {
       "binary": false,
