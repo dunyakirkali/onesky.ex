@@ -6,7 +6,7 @@
       "method": "delete",
       "options": [],
       "request_body": "",
-      "url": "https://platform.api.onesky.io/1/projects/322910?api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542916077&dev_hash=89c2db8ad3a3313ee73a7644dd71b00b"
+      "url": "https://platform.api.onesky.io/1/projects/322910?api_key=.*&timestamp=.*&dev_hash=.*"
     },
     "response": {
       "binary": false,
