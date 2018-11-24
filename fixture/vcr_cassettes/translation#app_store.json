@@ -6,7 +6,7 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://platform.api.onesky.io/1/projects/322974/translations/app-descriptions?locale=en&api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542976240&dev_hash=1375fff9b5525124721a1b1b15b13795"
+      "url": "https://platform.api.onesky.io/1/projects/322974/translations/app-descriptions?locale=en&api_key=.*&timestamp=.*&dev_hash=.*"
     },
     "response": {
       "binary": false,
