@@ -6,7 +6,7 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://platform.api.onesky.io/1/projects/322927/import-tasks?api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542922840&dev_hash=2886644260a684d2b63a1fd71c441270"
+      "url": "https://platform.api.onesky.io/1/projects/322927/import-tasks?api_key=.*&timestamp=.*&dev_hash=.*"
     },
     "response": {
       "binary": false,
