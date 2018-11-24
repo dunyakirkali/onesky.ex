@@ -6,7 +6,7 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://platform.api.onesky.io/1/project-types?api_key=ZE92t9FPVxtoP463kN2B3MYD66eNKu7A&timestamp=1542887609&dev_hash=eeef6fca0c14328a75a42f3784f0498f"
+      "url": "https://platform.api.onesky.io/1/project-types?api_key=.*&timestamp=.*&dev_hash=.*"
     },
     "response": {
       "binary": false,
