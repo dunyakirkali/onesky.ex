@@ -72,7 +72,7 @@ config :onesky,
 - **Order**
     - ~~LIST all orders~~
     - ~~SHOW order details~~
-    - CREATE an order
+    - ~~CREATE an order~~
 
 **Language**
 - **Locale**
