@@ -4,7 +4,7 @@ defmodule Onesky.MixProject do
   def project do
     [
       app: :onesky,
-      version: "0.11.3",
+      version: "0.12.0",
       elixir: "~> 1.4",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
