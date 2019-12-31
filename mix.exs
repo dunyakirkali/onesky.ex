@@ -25,13 +25,13 @@ defmodule Onesky.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:excoveralls, "~> 0.8.1", only: :test},
+      {:excoveralls, "~> 0.12.1", only: :test},
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:credo, "~> 0.8.10", only: [:dev, :test], runtime: false},
-      {:tesla, "~> 1.2.1"},
-      {:hackney, "~> 1.14.0"},
+      {:credo, "~> 1.1.5", only: [:dev, :test], runtime: false},
+      {:tesla, "~> 1.3.0"},
+      {:hackney, "~> 1.15.2"},
       {:jason, ">= 1.0.0"},
-      {:exvcr, "~> 0.10", only: :test}
+      {:exvcr, "~> 0.11", only: :test}
     ]
   end
 
