@@ -1,0 +1,32 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://platform.api.onesky.io/1/projects/314254/orders?api_key=.*&timestamp=.*&dev_hash=.*"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"meta\":{\"status\":201},\"data\":{\"id\":372,\"files\":[{\"name\":\"string.po\"},{\"name\":\"string2.po\"}],\"from_language\":{\"code\":\"en-US\",\"english_name\":\"English (United States)\",\"local_name\":\"English (United States)\",\"locale\":\"en\",\"region\":\"US\"},\"to_language\":{\"code\":\"ja-JP\",\"english_name\":\"Japanese\",\"local_name\":\"日本語\",\"locale\":\"ja\",\"region\":\"JP\"},\"order_type\":\"translate-only\",\"is_including_not_translated\":true,\"is_including_not_approved\":false,\"is_including_outdated\":true,\"tone\":\"formal\",\"specialization\":\"general\",\"note\":\"Message to translator\",\"ordered_at\":\"2013-08-15T08:12:40+0000\",\"ordered_at_timestamp\":13283746583}}",
+      "headers": {
+        "Access-Control-Allow-Headers": "Authorization, X-Authorization, Origin, Accept, Content-Type, X-Requested-With, X-HTTP-Method-Override",
+        "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Content-Type": "application/json",
+        "Date": "Wed, 21 Nov 2018 21:05:08 GMT",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Pragma": "no-cache",
+        "Server": "Apache",
+        "Set-Cookie": "PHPSESSID=un76cfch89c2b9kou1717arou3; path=/",
+        "Content-Length": "83",
+        "Connection": "keep-alive"
+      },
+      "status_code": 201,
+      "type": "ok"
+    }
+  }
+]

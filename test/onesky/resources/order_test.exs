@@ -28,4 +28,19 @@ defmodule OrderTest do
       assert length(env.body["data"]) == 1
     end
   end
+
+  test "create_order" do
+    use_cassette "order#create" do
+      order = %{files: ["string.po"], to_locale: "zh-TW", }
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Order.create_order(314254, order)
+
+      assert env.status == 201
+
+      assert env.body["meta"]["status"] == 201
+
+      assert env.body["data"]["id"] == 372
+      assert env.body["data"]["order_type"] == "translate-only"
+      assert env.body["data"]["note"] == "Message to translator"
+    end
+  end
 end

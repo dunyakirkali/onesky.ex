@@ -16,4 +16,11 @@ defmodule Onesky.Order do
   def list_orders(client, project_id) do
     Tesla.get(client, "projects/#{project_id}/orders")
   end
+
+  @doc """
+  CREATE an order
+  """
+  def create_order(client, project_id, order) do
+    Tesla.post(client, "projects/#{project_id}/orders", order)
+  end
 end
