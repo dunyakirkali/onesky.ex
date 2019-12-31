@@ -68,7 +68,7 @@ config :onesky,
 
 **Order**
 - **Quotation**
-    - SHOW a quotation
+    - ~~SHOW a quotation~~
 - **Order**
     - ~~LIST all orders~~
     - ~~SHOW order details~~
