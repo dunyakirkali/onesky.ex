@@ -17,6 +17,29 @@ defmodule FileTest do
     end
   end
 
+  test "upload_file" do
+    use_cassette "file#upload" do
+      translation_file = "fixture/files/Main.strings" |> File.read! |> Base.encode64()
+      file = [
+        %{
+          "file" => translation_file,
+          "file_format" => "IOS_STRINGS",
+          "locale" => "zh-TW",
+          "is_keeping_all_strings" => true,
+          "is_allow_translation_same_as_original" => false
+        }
+      ]
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.File.upload_file(314_254, file)
+
+      assert env.status == 201
+
+      assert env.body["meta"]["status"] == 201
+
+      assert env.body["data"]["name"] == "string.po"
+      assert env.body["data"]["format"] == "GNU_PO"
+    end
+  end
+
   test "delete_file" do
     use_cassette "file#delete" do
       file = %{"file_name" => "gettext_po_sample_file.po"}

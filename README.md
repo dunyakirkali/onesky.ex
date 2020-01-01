@@ -53,7 +53,7 @@ config :onesky,
 **String**
 - **File**
     - ~~LIST uploaded files~~
-    - UPLOAD a file
+    - ~~UPLOAD a file~~
     - ~~DELETE a file~~
 - **Translation**
     - EXPORT translations in files
