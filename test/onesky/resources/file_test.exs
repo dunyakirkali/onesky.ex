@@ -42,7 +42,7 @@ defmodule FileTest do
 
   test "delete_file" do
     use_cassette "file#delete" do
-      file = %{"file_name" => "gettext_po_sample_file.po"}
+      file = [file_name: "gettext_po_sample_file.po"]
       {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.File.delete_file(322_927, file)
 
       assert env.status == 200

@@ -1,0 +1,32 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://platform.api.onesky.io/1/projects/322974/translations/multilingual?api_key=.*&timestamp=.*&dev_hash=.*"
+    },
+    "response": {
+      "binary": true,
+      "body": "g20AAAJeH4sIADuBBVIAA41UQa/TMAy+71eYcgFpXfeAB1PXViBA4gIc4MIxa9zVWpOUJO02offfcdu9ruXtQCu1jh1//mzHSZ5Jk/tzjVB6VWWL5PGHQmYL4Cfx5CvMPp+EqiuET0YJ0kk0aBfDFoVeQF4K69CnQeOLcBNAlE2Mpfd1iL8batPgo9EetQ+7sAHkwyoNPJ581IXfjlC3kLRQmAYt4bE21k/8jyR9mUpsKcewXyyBNHkSVehyUWF6d4Vy/szJdAwugXPngsG2M/IMf3qxX4r8sLem0TLMTWVsDM+LNb+vtuMWJeyedAzrq6oWUpLez3QFMw0Loag6xxB8r1HDD6FdsITgC1YtesoFfMMGWTMqlvDBcgZLcLw1dGipuCL2wkP/ldROSPfpx/B2va5PT3neowLReHOD7v3M4VbuxST+zliJNrRCUuNiuEO1nVAScUX6sOR/S448ygnBR7jXmzebzQSx60UoMTdWeDLMVRuNU9D3CiUJeKHEKbxk+a7L8uW0ZfMO/k8mD6M0L+SkmPOKzfp+w/ZPadZz61jvsWRXEsM3ifojmnXyIomGeVwkXWo8nkzycpDLuyejyarBVmc/S3Igez2whM6LXUWu5F54AzuExrFYGAtUVY3zXdVbBBwQHc8Pe+eN4gFzK/hlGs753DmBZ+Th4F3Q9dXrSL40jYfaEiPnhktBuu8n8Fq4A6feB63RKnKODaskqkfWCd8XFos06G6NOIqOx+OKhBYrY/fREM9Fl2hB9tVY5PCMp/oYqxWDiawHTKK+Ukl0qVs0XG9/AQiVqov2BAAA",
+      "headers": {
+        "Access-Control-Allow-Headers": "Authorization, X-Authorization, Origin, Accept, Content-Type, X-Requested-With, X-HTTP-Method-Override",
+        "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Content-Type": "text/plain; charset=UTF-8",
+        "Date": "Thu, 22 Nov 2018 19:47:58 GMT",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Pragma": "no-cache",
+        "Server": "Apache",
+        "Set-Cookie": "PHPSESSID=5nlveu1qbnm1ktv7jid2jfbte2; path=/",
+        "Content-Length": "161126",
+        "Connection": "keep-alive"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

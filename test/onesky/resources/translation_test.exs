@@ -4,9 +4,27 @@ defmodule TranslationTest do
 
   doctest Onesky.Translation
 
+  test "export_files" do
+    use_cassette "translation#export_files" do
+      params = [locale: "zh-TW", source_file_name: "string.po"]
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Translation.export_files(322_974, params)
+
+      assert env.status == 200
+    end
+  end
+
+  test "export_multilingual_files" do
+    use_cassette "translation#export_multilingual_files" do
+      params = [source_file_name: "app.json"]
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Translation.export_multilingual_files(322_974, params)
+
+      assert env.status == 200
+    end
+  end
+
   test "get_appstore_description" do
     use_cassette "translation#app_store" do
-      locale = %{"locale" => "en"}
+      locale = [locale: "en"]
       {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Translation.get_appstore_description(322_974, locale)
 
       assert env.status == 200
@@ -21,7 +39,7 @@ defmodule TranslationTest do
 
   test "get_translation_status" do
     use_cassette "translation#status" do
-      file = %{"file_name" => "Localizable.strings", "locale" => "nl-NL"}
+      file = [file_name: "Localizable.strings", locale: "nl-NL"]
       {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Translation.get_translation_status(314_254, file)
 
       assert env.status == 200
