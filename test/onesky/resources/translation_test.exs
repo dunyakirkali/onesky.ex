@@ -2,8 +2,6 @@ defmodule TranslationTest do
   use ExUnit.Case, async: true
   use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
 
-  alias Tesla.Multipart
-
   doctest Onesky.Translation
 
   test "get_appstore_description" do

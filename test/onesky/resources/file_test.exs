@@ -2,8 +2,6 @@ defmodule FileTest do
   use ExUnit.Case, async: true
   use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
 
-  alias Tesla.Multipart
-
   doctest Onesky.File
 
   test "list_uploaded_files" do
