@@ -19,7 +19,7 @@ defmodule ProjectGroupTest do
 
   test "show_project_group_details" do
     use_cassette "project_group#show" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ProjectGroup.show_project_group_details(142066)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ProjectGroup.show_project_group_details(142_066)
 
       assert env.status == 200
 
@@ -41,14 +41,14 @@ defmodule ProjectGroupTest do
 
       assert env.body["meta"]["status"] == 201
 
-      assert env.body["data"]["id"] == 145685
+      assert env.body["data"]["id"] == 145_685
       assert env.body["data"]["name"] == "Ahtung"
     end
   end
 
   test "delete_project_group" do
     use_cassette "project_group#delete" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ProjectGroup.delete_project_group(145685)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ProjectGroup.delete_project_group(145_685)
 
       assert env.status == 200
     end
@@ -56,7 +56,7 @@ defmodule ProjectGroupTest do
 
   test "languages" do
     use_cassette "project_group#languages" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ProjectGroup.languages(142066)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ProjectGroup.languages(142_066)
 
       assert env.status == 200
 

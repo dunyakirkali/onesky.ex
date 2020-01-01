@@ -6,7 +6,7 @@ defmodule QuotationTest do
 
   test "show_quotation" do
     use_cassette "quotation#show" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Quotation.show_quotation(314254)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Quotation.show_quotation(314_254)
 
       assert env.status == 200
 

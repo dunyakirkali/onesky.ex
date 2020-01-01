@@ -6,7 +6,7 @@ defmodule FileTest do
 
   test "list_uploaded_files" do
     use_cassette "file#list" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.File.list_uploaded_files(314254)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.File.list_uploaded_files(314_254)
 
       assert env.status == 200
 
@@ -20,7 +20,7 @@ defmodule FileTest do
   test "delete_file" do
     use_cassette "file#delete" do
       file = %{"file_name" => "gettext_po_sample_file.po"}
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.File.delete_file(322927, file)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.File.delete_file(322_927, file)
 
       assert env.status == 200
 
