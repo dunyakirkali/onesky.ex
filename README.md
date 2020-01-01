@@ -64,7 +64,7 @@ config :onesky,
     - ~~LIST import tasks~~
     - ~~SHOW import task~~
 - **Screenshot**
-    - UPLOAD screenshots
+    - ~~UPLOAD screenshots~~
 
 **Order**
 - **Quotation**
