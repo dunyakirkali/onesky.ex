@@ -6,7 +6,7 @@ defmodule ImportTaskTest do
 
   test "list_import_tasks" do
     use_cassette "import_task#list" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ImportTask.list_import_tasks(322927)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ImportTask.list_import_tasks(322_927)
 
       assert env.status == 200
 
@@ -19,13 +19,13 @@ defmodule ImportTaskTest do
 
   test "show_import_tasks" do
     use_cassette "import_task#show" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ImportTask.show_import_task(322927, 5114469)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ImportTask.show_import_task(322_927, 5_114_469)
 
       assert env.status == 200
 
       assert env.body["meta"]["status"] == 200
 
-      assert env.body["data"]["id"] == 5114469
+      assert env.body["data"]["id"] == 5_114_469
     end
   end
 end

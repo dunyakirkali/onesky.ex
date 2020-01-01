@@ -6,7 +6,7 @@ defmodule OrderTest do
 
   test "get_order" do
     use_cassette "order#get" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Order.get_order(314254, 1)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Order.get_order(314_254, 1)
 
       assert env.status == 200
 
@@ -18,7 +18,7 @@ defmodule OrderTest do
 
   test "list_orders" do
     use_cassette "order#list" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Order.list_orders(314254)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Order.list_orders(314_254)
 
       assert env.status == 200
 
@@ -32,7 +32,7 @@ defmodule OrderTest do
   test "create_order" do
     use_cassette "order#create" do
       order = %{files: ["string.po"], to_locale: "zh-TW", }
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Order.create_order(314254, order)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Order.create_order(314_254, order)
 
       assert env.status == 201
 

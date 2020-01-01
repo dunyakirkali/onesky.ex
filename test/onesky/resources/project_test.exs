@@ -6,7 +6,7 @@ defmodule ProjectTest do
 
   test "list_projects" do
     use_cassette "project#list" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.list_projects(142066)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.list_projects(142_066)
 
       assert env.status == 200
 
@@ -19,13 +19,13 @@ defmodule ProjectTest do
 
   test "show_project_details" do
     use_cassette "project#show" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.show_project_details(314254)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.show_project_details(314_254)
 
       assert env.status == 200
 
       assert env.body["meta"]["status"] == 200
 
-      assert env.body["data"]["id"] == 314254
+      assert env.body["data"]["id"] == 314_254
       assert env.body["data"]["name"] == "iPhone/iPad App"
       assert env.body["data"]["description"] == ""
       assert env.body["data"]["string_count"] == 534
@@ -36,13 +36,13 @@ defmodule ProjectTest do
   test "create_project" do
     use_cassette "project#create" do
       project = %{"project_type" => "website", "name" => "Ahtung", "description" => "The best company"}
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.create_project(142066, project)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.create_project(142_066, project)
 
       assert env.status == 201
 
       assert env.body["meta"]["status"] == 201
 
-      assert env.body["data"]["id"] == 322910
+      assert env.body["data"]["id"] == 322_910
       assert env.body["data"]["name"] == "Ahtung"
       assert env.body["data"]["description"] == "The best company"
     end
@@ -51,7 +51,7 @@ defmodule ProjectTest do
   test "update_project" do
     use_cassette "project#update" do
       project = %{"name" => "Bhtung", "description" => "The worst company"}
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.update_project(322910, project)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.update_project(322_910, project)
 
       assert env.status == 200
     end
@@ -59,7 +59,7 @@ defmodule ProjectTest do
 
   test "delete_project" do
     use_cassette "project#delete" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.delete_project(322910)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.delete_project(322_910)
 
       assert env.status == 200
     end
@@ -67,7 +67,7 @@ defmodule ProjectTest do
 
   test "languages" do
     use_cassette "project#languages" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.languages(322927)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.languages(322_927)
 
       assert env.status == 200
 
