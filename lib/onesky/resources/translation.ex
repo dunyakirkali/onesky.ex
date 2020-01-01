@@ -11,6 +11,13 @@ defmodule Onesky.Translation do
   end
 
   @doc """
+  export translations in MULTILINGUAL files
+  """
+  def export_multilingual_files(client, project_id, params) do
+    Tesla.get(client, "/projects/#{project_id}/translations/multilingual", query: params)
+  end
+
+  @doc """
   LIST uploaded files
   """
   def get_appstore_description(client, project_id, locale) do
