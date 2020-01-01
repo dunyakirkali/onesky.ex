@@ -56,7 +56,7 @@ config :onesky,
     - ~~UPLOAD a file~~
     - ~~DELETE a file~~
 - **Translation**
-    - EXPORT translations in files
+    - ~~EXPORT translations in files~~
     - export translations in MULTILINGUAL files
     - ~~export translations of APP STORE Description~~
     - ~~GET translation status~~
