@@ -20,14 +20,14 @@ defmodule Onesky.Translation do
   @doc """
   LIST uploaded files
   """
-  def get_appstore_description(client, project_id, locale) do
-    Tesla.get(client, "/projects/#{project_id}/translations/app-descriptions?locale=#{locale["locale"]}")
+  def get_appstore_description(client, project_id, params) do
+    Tesla.get(client, "/projects/#{project_id}/translations/app-descriptions", query: params)
   end
 
   @doc """
   LIST uploaded files
   """
-  def get_translation_status(client, project_id, file) do
-    Tesla.get(client, "/projects/#{project_id}/translations/status?file_name=#{file["file_name"]}&locale=#{file["locale"]}")
+  def get_translation_status(client, project_id, params) do
+    Tesla.get(client, "/projects/#{project_id}/translations/status", query: params)
   end
 end

@@ -20,7 +20,7 @@ defmodule Onesky.File do
   @doc """
   DELETE a file
   """
-  def delete_file(client, project_id, file) do
-    Tesla.delete(client, "/projects/#{project_id}/files?file_name=#{file["file_name"]}")
+  def delete_file(client, project_id, params) do
+    Tesla.delete(client, "/projects/#{project_id}/files", query: params)
   end
 end
