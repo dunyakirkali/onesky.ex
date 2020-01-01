@@ -3,18 +3,15 @@ defmodule Onesky do
   [OneSky](http://oneskyapp.com/) API Client in Elixir.
   """
 
-  @api_key Application.get_env(:onesky, :api_key)
-  @api_secret Application.get_env(:onesky, :api_secret)
-
   @doc """
   The client
   """
   def client() do
     timestamp = System.system_time(:second)
-    dev_hash = Base.encode16(:erlang.md5("#{timestamp}#{@api_secret}"), case: :lower)
+    dev_hash = Base.encode16(:erlang.md5("#{timestamp}#{api_secret()}"), case: :lower)
 
     params = [
-      api_key: @api_key,
+      api_key: api_key(),
       timestamp: timestamp,
       dev_hash: dev_hash
     ]
@@ -27,5 +24,13 @@ defmodule Onesky do
     adapter = { Tesla.Adapter.Hackney, [] }
 
     Tesla.client(middleware, adapter)
+  end
+
+  defp api_key() do
+    Application.get_env(:onesky, :api_key)
+  end
+
+  defp api_secret() do
+    Application.get_env(:onesky, :api_secret)
   end
 end
