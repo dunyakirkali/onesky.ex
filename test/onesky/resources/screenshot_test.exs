@@ -23,7 +23,7 @@ defmodule ScreenshotTest do
           ]
         }
       ]
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Screenshot.upload_screenshots(314254, screenshots)
+      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Screenshot.upload_screenshots(314_254, screenshots)
 
       assert env.status == 201
     end
