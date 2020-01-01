@@ -1,0 +1,32 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://platform.api.onesky.io/1/projects/314254/files?api_key=.*&timestamp=.*&dev_hash=.*"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"meta\":{\"status\":201},\"data\":{\"name\":\"string.po\",\"format\":\"GNU_PO\",\"language\":{\"code\":\"en-US\",\"english_name\":\"English(UnitedStates)\",\"local_name\":\"English(UnitedStates)\",\"locale\":\"en\",\"region\":\"US\"},\"import\":{\"id\":154,\"created_at\":\"2013-10-07T15:27:10+0000\",\"created_at_timestamp\":1381159630}}}",
+      "headers": {
+        "Access-Control-Allow-Headers": "Authorization, X-Authorization, Origin, Accept, Content-Type, X-Requested-With, X-HTTP-Method-Override",
+        "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "Content-Type": "application/json",
+        "Date": "Wed, 21 Nov 2018 21:05:08 GMT",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Pragma": "no-cache",
+        "Server": "Apache",
+        "Set-Cookie": "PHPSESSID=un76cfch89c2b9kou1717arou3; path=/",
+        "Content-Length": "83",
+        "Connection": "keep-alive"
+      },
+      "status_code": 201,
+      "type": "ok"
+    }
+  }
+]
