@@ -19,7 +19,7 @@ defmodule FileTest do
 
   test "upload_file" do
     use_cassette "file#upload" do
-      translation_file = "fixture/files/Main.strings" |> File.read! |> Base.encode64()
+      translation_file = "fixture/files/Main.strings"
       file = [
         %{
           "file" => translation_file,
