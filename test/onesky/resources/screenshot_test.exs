@@ -6,7 +6,7 @@ defmodule ScreenshotTest do
 
   test "upload_screenshots" do
     use_cassette "screenshots#upload" do
-      image = "fixture/screenshots/screenshot.png" |> File.read! |> Base.encode64()
+      image = "fixture/screenshots/screenshot.png" |> File.read! |> Base.url_encode64()
       screenshots = [
         %{
           "name" => "screenshot.png",
