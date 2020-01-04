@@ -3,6 +3,8 @@ defmodule Onesky.File do
   [File](https://github.com/onesky/api-documentation-platform/blob/master/resources/file.md)
   """
 
+  alias Tesla.Multipart
+
   @doc """
   LIST uploaded files
   """
@@ -14,7 +16,12 @@ defmodule Onesky.File do
   UPLOAD a file
   """
   def upload_file(client, project_id, file) do
-    Tesla.post(client, "/projects/#{project_id}/files", file)
+    {filepath, fields} = Keyword.pop(file, :file)
+    mp =
+      fields
+      |> Enum.reduce(Multipart.new(), fn {key, val}, mp -> Multipart.add_field(mp, key, val) end)
+      |> Multipart.add_file(filepath)
+    Tesla.post(client, "/projects/#{project_id}/files", mp)
   end
 
   @doc """

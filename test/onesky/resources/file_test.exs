@@ -19,15 +19,13 @@ defmodule FileTest do
 
   test "upload_file" do
     use_cassette "file#upload" do
-      translation_file = "fixture/files/Main.strings" |> File.read! |> Base.encode64()
+      translation_file = "fixture/files/Main.strings"
       file = [
-        %{
-          "file" => translation_file,
-          "file_format" => "IOS_STRINGS",
-          "locale" => "zh-TW",
-          "is_keeping_all_strings" => true,
-          "is_allow_translation_same_as_original" => false
-        }
+        file: translation_file,
+        file_format: "IOS_STRINGS",
+        locale: "en-US",
+        is_keeping_all_strings: "true",
+        is_allow_translation_same_as_original: "false"
       ]
       {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.File.upload_file(314_254, file)
 
