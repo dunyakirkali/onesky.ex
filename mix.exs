@@ -31,7 +31,9 @@ defmodule Onesky.MixProject do
       {:tesla, "~> 1.3.0"},
       {:hackney, "~> 1.15.2"},
       {:jason, ">= 1.0.0"},
-      {:exvcr, "~> 0.11", only: :test}
+      {:exvcr, "~> 0.11", only: :test},
+      {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
+      {:doctor, "~> 0.17.0", only: :dev}
     ]
   end
 
@@ -50,5 +52,11 @@ defmodule Onesky.MixProject do
     """
     Elixir's OneSky API client
     """
+  end
+
+  defp aliases do
+    [
+      code_quality: ["credo --strict", "dialyzer", "doctor"]
+    ]
   end
 end
