@@ -1,6 +1,7 @@
 # Onesky
 
-[![Build Status](https://travis-ci.org/ahtung/onesky.ex.svg?branch=master)](https://travis-ci.org/ahtung/onesky.ex)
+![Code Quality](https://github.com/ahtung/onesky.ex/workflows/Code%20Quality/badge.svg)
+![Continuous Integration](https://github.com/ahtung/onesky.ex/workflows/Continuous%20Integration/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/ahtung/onesky.ex/badge.svg?branch=master)](https://coveralls.io/r/ahtung/onesky.ex?branch=master)
 [![Hex.pm version](https://img.shields.io/hexpm/v/onesky.svg?style=flat-square)](https://hex.pm/packages/onesky)
 [![Hex.pm downloads](https://img.shields.io/hexpm/dt/onesky.svg)](https://hex.pm/packages/onesky)
