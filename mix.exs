@@ -11,7 +11,8 @@ defmodule Onesky.MixProject do
       package: package(),
       description: description(),
       test_coverage: [tool: ExCoveralls],
-      preferred_cli_env: [coveralls: :test, vcr: :test]
+      preferred_cli_env: [coveralls: :test, vcr: :test],
+      aliases: aliases()
     ]
   end
 
