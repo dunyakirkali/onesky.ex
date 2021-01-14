@@ -31,7 +31,7 @@ defmodule OrderTest do
 
   test "create_order" do
     use_cassette "order#create" do
-      order = %{files: ["string.po"], to_locale: "zh-TW", }
+      order = %{files: ["string.po"], to_locale: "zh-TW"}
       {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Order.create_order(314_254, order)
 
       assert env.status == 201

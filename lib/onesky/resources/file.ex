@@ -17,10 +17,12 @@ defmodule Onesky.File do
   """
   def upload_file(client, project_id, file) do
     {filepath, fields} = Keyword.pop(file, :file)
+
     mp =
       fields
       |> Enum.reduce(Multipart.new(), fn {key, val}, mp -> Multipart.add_field(mp, key, val) end)
       |> Multipart.add_file(filepath)
+
     Tesla.post(client, "/projects/#{project_id}/files", mp)
   end
 

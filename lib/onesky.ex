@@ -21,6 +21,7 @@ defmodule Onesky do
       {Tesla.Middleware.BaseUrl, "https://platform.api.onesky.io/1"},
       {Tesla.Middleware.Query, params}
     ]
+
     adapter = {Tesla.Adapter.Hackney, []}
 
     Tesla.client(middleware, adapter)

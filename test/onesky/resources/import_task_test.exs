@@ -19,7 +19,8 @@ defmodule ImportTaskTest do
 
   test "show_import_tasks" do
     use_cassette "import_task#show" do
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.ImportTask.show_import_task(322_927, 5_114_469)
+      {:ok, %Tesla.Env{} = env} =
+        Onesky.client() |> Onesky.ImportTask.show_import_task(322_927, 5_114_469)
 
       assert env.status == 200
 

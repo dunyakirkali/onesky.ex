@@ -35,8 +35,14 @@ defmodule ProjectTest do
 
   test "create_project" do
     use_cassette "project#create" do
-      project = %{"project_type" => "website", "name" => "Ahtung", "description" => "The best company"}
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.create_project(142_066, project)
+      project = %{
+        "project_type" => "website",
+        "name" => "Ahtung",
+        "description" => "The best company"
+      }
+
+      {:ok, %Tesla.Env{} = env} =
+        Onesky.client() |> Onesky.Project.create_project(142_066, project)
 
       assert env.status == 201
 
@@ -51,7 +57,9 @@ defmodule ProjectTest do
   test "update_project" do
     use_cassette "project#update" do
       project = %{"name" => "Bhtung", "description" => "The worst company"}
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Project.update_project(322_910, project)
+
+      {:ok, %Tesla.Env{} = env} =
+        Onesky.client() |> Onesky.Project.update_project(322_910, project)
 
       assert env.status == 200
     end

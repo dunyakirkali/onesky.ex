@@ -6,7 +6,8 @@ defmodule ScreenshotTest do
 
   test "upload_screenshots" do
     use_cassette "screenshots#upload" do
-      image = "fixture/screenshots/screenshot.png" |> File.read! |> Base.url_encode64()
+      image = "fixture/screenshots/screenshot.png" |> File.read!() |> Base.url_encode64()
+
       screenshots = [
         %{
           "name" => "screenshot.png",
@@ -23,7 +24,9 @@ defmodule ScreenshotTest do
           ]
         }
       ]
-      {:ok, %Tesla.Env{} = env} = Onesky.client() |> Onesky.Screenshot.upload_screenshots(314_254, screenshots)
+
+      {:ok, %Tesla.Env{} = env} =
+        Onesky.client() |> Onesky.Screenshot.upload_screenshots(314_254, screenshots)
 
       assert env.status == 201
     end
