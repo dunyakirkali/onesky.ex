@@ -26,7 +26,7 @@ defmodule Onesky.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:excoveralls, "~> 0.13.4", only: :test},
+      {:excoveralls, "~> 0.14.0", only: :test},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:credo, "~> 1.1.5", only: [:dev, :test], runtime: false},
       {:tesla, "~> 1.4.0"},
