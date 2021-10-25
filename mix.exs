@@ -30,7 +30,7 @@ defmodule Onesky.MixProject do
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:credo, "~> 1.5.5", only: [:dev, :test], runtime: false},
       {:tesla, "~> 1.4.0"},
-      {:hackney, "~> 1.17.0"},
+      {:hackney, "~> 1.18.0"},
       {:jason, ">= 1.0.0"},
       {:exvcr, "~> 0.11", only: :test},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
