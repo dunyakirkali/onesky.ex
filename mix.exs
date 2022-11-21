@@ -34,7 +34,7 @@ defmodule Onesky.MixProject do
       {:jason, ">= 1.0.0"},
       {:exvcr, "~> 0.11", only: :test},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false},
-      {:doctor, "~> 0.19.0", only: :dev}
+      {:doctor, "~> 0.21.0", only: :dev}
     ]
   end
 
