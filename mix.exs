@@ -28,7 +28,7 @@ defmodule Onesky.MixProject do
     [
       {:excoveralls, "~> 0.15.3", only: :test},
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:credo, "~> 1.6.1", only: [:dev, :test], runtime: false},
+      {:credo, "~> 1.7.0", only: [:dev, :test], runtime: false},
       {:tesla, "~> 1.7.0"},
       {:hackney, "~> 1.18.0"},
       {:jason, ">= 1.0.0"},
